@@ -28,7 +28,7 @@
 #xd{
     background: url(../img/fondo4.jpg);
     background-repeat: repeat;
-    background-size: 75%;
+    background-size: cover;
     padding-top: -20px;
 }
 

@@ -39,83 +39,85 @@
             </div>
         </nav>
 
-        <div id="container">
-            <div class="contenedor">
-                <div class="panel">
-                    <h1 class="titulo">crear una cuenta</h1>
-                    <p class="subtitulo">ya tengo cuenta <a href="#">iniciar sesion</a></p>
+        <div class="fondo">
+            <div id="container">
+                <div class="contenedor">
+                    <div class="panel">
+                        <h1 class="titulo">crear una cuenta</h1>
+                        <p class="subtitulo">ya tengo cuenta <a href="#">iniciar sesion</a></p>
 
-                    <form onsubmit="alert('cuenta creada')">
-                        <div class="nombres">
-                            <div class="input">
-                                <label for="">nombre</label>
-                                <input type="text" required id="nombre">
+                        <form onsubmit="alert('cuenta creada')">
+                            <div class="nombres">
+                                <div class="input">
+                                    <label for="">nombre</label>
+                                    <input type="text" required id="nombre">
+                                </div>
+
+                                <div class="input">
+                                    <label for="">apellido</label>
+                                    <input type="text" required id="apellido">
+                                </div>
                             </div>
 
                             <div class="input">
-                                <label for="">apellido</label>
-                                <input type="text" required id="apellido">
+                                <label for="">email</label>
+                                <input type="email" required id="email">
                             </div>
-                        </div>
 
-                        <div class="input">
-                            <label for="">email</label>
-                            <input type="email" required id="email">
-                        </div>
+                            <div class="input">
+                                <label for="">contraseña</label>
+                                <input type="password" required id="contraseña">
+                            </div>
 
-                        <div class="input">
-                            <label for="">contraseña</label>
-                            <input type="password" required id="contraseña">
-                        </div>
+                            <div class="cumpleaños">
+                                <h6 class="cumpleaños-titulo">fecha de cumpleaños</h6>
 
-                        <div class="cumpleaños">
-                            <h6 class="cumpleaños-titulo">fecha de cumpleaños</h6>
+                                <div class="cumpleaños_inputs">
+                                    <div class="cumple">
+                                        <div class="meses">
+                                            <label for="mes">mes</label>
 
-                            <div class="cumpleaños_inputs">
-                                <div class="cumple">
-                                    <div class="meses">
-                                        <label for="mes">mes</label>
+                                            <select name="mes" id="mes">
+                                                <option value="1">Enero</option>
+                                                <option value="2">febrero</option>
+                                                <option value="3">Marzo</option>
+                                                <option value="4">Abril</option>
+                                                <option value="5">Mayo</option>
+                                                <option value="6">Junio</option>
+                                                <option value="7">Julio</option>
+                                                <option value="8">Agosto</option>
+                                                <option value="9">Septiembre</option>
+                                                <option value="10">Octubre</option>
+                                                <option value="11">Noviembre</option>
+                                                <option value="12">Diciembre</option>
+                                            </select>
+                                        </div>
+                                    </div>
 
-                                        <select name="mes" id="mes">
-                                            <option value="1">Enero</option>
-                                            <option value="2">febrero</option>
-                                            <option value="3">Marzo</option>
-                                            <option value="4">Abril</option>
-                                            <option value="5">Mayo</option>
-                                            <option value="6">Junio</option>
-                                            <option value="7">Julio</option>
-                                            <option value="8">Agosto</option>
-                                            <option value="9">Septiembre</option>
-                                            <option value="10">Octubre</option>
-                                            <option value="11">Noviembre</option>
-                                            <option value="12">Diciembre</option>
-                                        </select>
+                                    <div class="input">
+                                        <label for="dia">dia</label>
+                                        <input type="number" required id="dia" min="1" max="31">
+                                    </div>
+
+                                    <div class="input">
+                                        <label for="año">año</label>
+                                        <input type="number" required id="año" min="1900" max="2021">
                                     </div>
                                 </div>
-
-                                <div class="input">
-                                    <label for="dia">dia</label>
-                                    <input type="number" required id="dia" min="1" max="31">
-                                </div>
-
-                                <div class="input">
-                                    <label for="año">año</label>
-                                    <input type="number" required id="año" min="1900" max="2021">
-                                </div>
                             </div>
-                        </div>
 
-                        <button type="submit">crear cuenta</button>
+                            <button type="submit">crear cuenta</button>
 
-                    </form>
-                </div>     
+                        </form>
+                    </div>     
+                </div>
             </div>
         </div>
 
         <footer>
             <div class="footer-content">
                 <h3>gamezone</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo quis saepe omnis qui amet illo quos suscipit autem, voluptatum nesciunt?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi minima nemo beatae dicta at ratione enim cum eaque aliquid illum.</p>
                 <ul class="redes">
                     <li><a href="#"><img src="img/logos1.jpg"></a></li>
                     <li><a href="#"><img src="img/logos2.png"></a></li>

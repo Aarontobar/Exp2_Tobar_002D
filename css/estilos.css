@@ -70,8 +70,8 @@
 
 #tarjetas{
     background: url(../img/fondo1.jpg);
-    background-repeat: repeat;
-    background-size: 75%;
+    background-repeat: no-repeat;
+    background-size: cover;
     margin-top:-20px;
 }
 
@@ -81,8 +81,8 @@
 
 #juegos{
     background: url(../img/fondo2.jpg);
-    background-repeat: repeat;
-    background-size: 75%;
+    background-repeat: no-repeat;
+    background-size: cover;
     margin-top: -20px;
 }
 

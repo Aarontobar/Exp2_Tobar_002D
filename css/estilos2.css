@@ -14,8 +14,8 @@
 
 body{
     background: url(../img/fondito.jpg);
-    background-repeat:repeat;
-    background-size:75%;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 section{
