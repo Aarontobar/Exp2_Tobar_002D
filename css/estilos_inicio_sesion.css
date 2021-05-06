@@ -6,13 +6,8 @@
     background:linear-gradient(45deg,#fe0061,#ff893b);
 }
 
-
-#container p {
-    max-width: 600px;
-}
-
 .fondo {
-    background-image: url(../img/registro.jpg);
+    background-image: url(../img/iniciar_sesion2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -22,7 +17,7 @@
     margin: 0 auto;
     padding: 24px;
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
+    grid-template-columns: repeat(12,1fr);
     gap: 24px;
     align-items: center;
     height: 100vh;
@@ -33,9 +28,9 @@
 }
 
 .panel {
+    background: rgba(255,255,255,.8);
     padding: 24px;
     border-radius: 8px;
-    background: rgba(255,255,255,.7);
 }
 
 .titulo {
@@ -60,7 +55,7 @@
     display: block;
 }
 
-.input input {
+.input input{
     border: none;
     border-bottom: 1px solid;
     width: 100%;
@@ -68,43 +63,7 @@
     background: transparent;
 }
 
-.nombres {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 12px;
-}
-
-.cumpleaños-titulo {
-    font-size: 12px;
-    font-weight: 700;
-    margin: 0;
-    margin-bottom: 8px;
-}
-
-.cumple label {
-    font-size: 12px;
-    display: block;
-}
-
-.meses select{
-    background: transparent;
-}
-
-.cumple select {
-    width: 100%;
-    border: none;
-    border-bottom: 1px solid;
-    height: 28px;
-    padding: 0;
-}
-
-.cumpleaños_inputs {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 12px;
-}
-
-form button {
+form button{
     display: block;
     margin: 0 auto;
     border: none;
@@ -114,52 +73,15 @@ form button {
     border-radius: 8px;
 }
 
+.contras{
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    gap: 14px;
+}
+
 #boton {
     cursor: pointer;
     width: 30px;
-}
-
-#btngenerar {
-    position: relative;
-    cursor: pointer;
-    color: #ffffff;
-    background: #fe0061;
-    border-radius: 8px;
-    width:100%;
-    margin-bottom: 20px;
-    padding: 10px 25px;
-}
-
-#btngenerar:active{
-    background: #000;
-}
-
-.contra{
-    display: grid;
-    grid-template-columns: 4fr 1fr 2fr;
-    gap: 2px;
-}
-
-.botones {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-@media only screen and (max-width: 660px) {
-    .contenedor {
-        grid-column: 1 / span 12;
-    }
-}
-
-@media only screen and (max-width: 360px) {
-    #container {
-        padding: 0;
-    }
-
-    .panel {
-        height: 0;
-        border-radius: 0;
-    }
 }
 
 footer{
