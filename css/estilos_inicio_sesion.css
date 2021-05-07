@@ -6,6 +6,10 @@
     background:linear-gradient(45deg,#fe0061,#ff893b);
 }
 
+li{
+    font-size: 16px;
+}
+
 .fondo {
     background-image: url(../img/iniciar_sesion2.jpg);
     background-repeat: no-repeat;
@@ -28,7 +32,7 @@
 }
 
 .panel {
-    background: rgba(255,255,255,.8);
+    backdrop-filter: blur(20px);
     padding: 24px;
     border-radius: 8px;
 }
@@ -82,6 +86,40 @@ form button{
 #boton {
     cursor: pointer;
     width: 30px;
+    filter: invert(1);
+}
+
+
+
+@media only screen and (max-width: 660px){
+    .contenedor{
+        grid-column: 1/span 12;
+        color: #ffffff;
+    }
+
+    .input input{
+        color: #ffffff;
+    }
+
+    #boton{
+        filter: invert(0);
+    }
+}
+
+@media only screen and (max-width: 360px){
+    #container{
+        padding: 0;
+    }
+
+    .panel{
+        color: #ffffff;
+        height: 0;
+        border-radius: 0;
+    }
+
+    .input input{
+        color: #ffffff;
+    }
 }
 
 footer{

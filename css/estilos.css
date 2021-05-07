@@ -1,9 +1,24 @@
+header{
+    position: relative;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 10px;
+    background: #ffffff;
+    box-sizing: border-box;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0,0,0,.2);
+}
+
 .navtext{
     font-family: 'Press Start 2P', cursive;
 }
 
 .navbar{
     background:linear-gradient(45deg,#fe0061,#ff893b);
+}
+
+li{
+    font-size: 16px;
 }
 
 @keyframes animate{
@@ -50,7 +65,7 @@
 }
 
 .card{
-    background:linear-gradient(45deg,#fe0061,#ffeb3b);
+    background: linear-gradient(45deg,#fe0061,#ff893b);
 }
 
 .card-title{
@@ -89,6 +104,7 @@
 #juegos h3{
     color: #ffffff;
 }
+
 
 footer{
     background: #202020;
