@@ -8,6 +8,9 @@
         <link rel="stylesheet" href="css/estilosRegistro.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet"> 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.js"></script>
+       
     </head>
     <body>
         
@@ -46,28 +49,28 @@
                         <h1 class="titulo">crear una cuenta</h1>
                         <p class="subtitulo">ya tengo cuenta <a href="inicio_sesion.html">iniciar sesion</a></p>
 
-                        <form onsubmit="alert('cuenta creada')">
+                        <form onsubmit="alert('cuenta creada')" id="formulario">
                             <div class="nombres">
                                 <div class="input">
                                     <label for="">nombre</label>
-                                    <input type="text" required id="nombre">
+                                    <input type="text" required name="nombre" id="nombre">
                                 </div>
 
                                 <div class="input">
                                     <label for="">apellido</label>
-                                    <input type="text" required id="apellido">
+                                    <input type="text" required name="apellido" id="apellido">
                                 </div>
                             </div>
 
                             <div class="input">
                                 <label for="">email</label>
-                                <input type="email" required id="email">
+                                <input type="email" required name="email" id="email">
                             </div>
 
                             <div class="contra">
                                 <div class="input">
                                     <label for="">contraseña</label>
-                                    <input type="password" required id="contraseña">
+                                    <input type="password" minlength="7" required name="contraseña" id="contraseña">
                                 </div>
 
                                 <img src="img/candado_cerrado.png" id="boton">
@@ -102,12 +105,12 @@
 
                                     <div class="input">
                                         <label for="dia">dia</label>
-                                        <input type="number" required id="dia" min="1" max="31">
+                                        <input type="number" required name="dia" id="dia" min="1" max="31">
                                     </div>
 
                                     <div class="input">
                                         <label for="año">año</label>
-                                        <input type="number" required id="año" min="1900" max="2021">
+                                        <input type="number" required name="año" id="año" min="1900" max="2021">
                                     </div>
                                 </div>
                             </div>
@@ -179,6 +182,52 @@
 
                 document.getElementById('contraseña').value = contraseñas;
             }
+        </script>
+         <script>
+            $(function(){
+                $("#formulario").validate({
+                    rules: {
+                        nombre: "required",
+                        apellido: "required",
+                        email: {
+                            required: true,
+                            email: true
+                        },
+                        contraseña: "required",
+                        dia: "required",
+                        año: "required"
+                        },
+                    messages: {
+                        nombre: {
+                            required: 'ingrese nombre'
+                        },
+                        apellido: {
+                            required: 'ingrese apellido'
+                        },
+                        email: {
+                            required: 'ingrese su correo',
+                            email: 'formato no valido'
+                        },
+                        contraseña: {
+                            required: 'ingrese contraseña',
+                            minlength: 'pocos caracteres'
+                        },
+                        mes: {
+                            required: 'seleccione'
+                        },
+                        dia: {
+                            required: 'digite dia',
+                            min: 'dia no corresponde',
+                            max: 'dia no corresponde'
+                        },
+                        año: {
+                            required: 'digite año',
+                            min: 'año no corresponde',
+                            max: 'año no corresponde'
+                        }
+                    }
+                });
+            });
         </script>
     </body>
 </html>

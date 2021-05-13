@@ -152,7 +152,7 @@ form button {
 
 @media only screen and (max-width: 660px) {
     .contenedor {
-        grid-column: 1 / span 12;
+        grid-column: 1 / span 13;
     }
 }
 
