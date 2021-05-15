@@ -8,6 +8,26 @@
         <link rel="stylesheet" href="css/estilos_inicio_sesion.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.js"></script>
+        <script>
+            $(function(){
+                $("#formulario").validate({
+                    rules: {
+                        usuario: "required",
+                        contraseña: "required"
+                    },
+                    messages: {
+                        usuario: {
+                            required: 'ingrese su usuario'
+                        },
+                        contraseña: {
+                            required: 'ingrese su contraseña'
+                        }
+                    }
+                });
+            });
+        </script>
     </head>
     <body>
 
@@ -46,16 +66,16 @@
                         <h1 class="titulo">iniciar sesion</h1>
                         <p class="subtitulo">no tengo cuenta<a href="registro.html">crear cuenta</a></p>
 
-                        <form>
+                        <form id="formulario" action="inicio.html">
                             <div class="input">
                                 <label for="">usuario</label>
-                                <input type="text" required id="usuario">
+                                <input type="text" name="usuario" required id="usuario">
                             </div>
 
                             <div class="contras">
                                 <div class="input">
                                     <label for="">cotraseña</label>
-                                    <input type="password" required id="contraseña">
+                                    <input type="password" name="contraseña" required id="contraseña">
                                 </div>
 
                                 <img src="img/candado_cerrado.png" id="boton">
@@ -71,7 +91,7 @@
         <footer>
             <div class="footer-content">
                 <h3>gamezone</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi minima nemo beatae dicta at ratione enim cum eaque aliquid illum.</p>
+                <p>lleva tu experiencia de juego al proximo nivel con gamezone</p>
                 <ul class="redes">
                     <li><a href="#"><img src="img/logos1.jpg"></a></li>
                     <li><a href="#"><img src="img/logos2.png"></a></li>

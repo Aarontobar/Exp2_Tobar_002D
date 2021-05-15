@@ -21,10 +21,10 @@ table img{
 }
 
 .fondo {
-    background-image: url(../img/fondoapi.jpeg);
+    background-image: url(../img/fondoapi.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 100vh;
+    min-height: 150vh;
 }
 
 .container {
